@@ -15,7 +15,7 @@
 # with your own examples and test corner cases.
 # 
 # Examples - what if both numbers are equal or are strings?
-
+puts "Welcome to the Number Comparer Thingy"
 def largest_number (num1, num2)
   puts "Enter your first number"
   num1 = gets.chomp
@@ -25,6 +25,9 @@ def largest_number (num1, num2)
     #If both numbers are equal
     num1 == num2
     puts "The numbers are equal"
+  elsif
+    num1 or num2 ==""
+    puts "Trying to Type Words in here. You're Special"
     elsif
       #Finds the largest number by asking if the 2nd number
       #is larger then first. 
