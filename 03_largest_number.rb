@@ -26,9 +26,6 @@ def largest_number (num1, num2)
     num1 == num2
     puts "The numbers are equal"
   elsif
-    num1 or num2 ==""
-    puts "Trying to Type Words in here. You're Special"
-    elsif
       #Finds the largest number by asking if the 2nd number
       #is larger then first. 
     num1 < num2
