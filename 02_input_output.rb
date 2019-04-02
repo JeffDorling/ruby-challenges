@@ -21,11 +21,13 @@
 # "Wow! You are 40 years old. Congratulations!"
 # The program also outputs:
 # "Tom, in 60 years you will be 100 years old!"
-
+require "io/console"
 puts "What is your name?"
-Person = gets.chomp
+Person = gets.chomp.capitalize
 puts "Hi #{Person}! How old are you?"
 Age = gets.chomp.to_i
 puts "Wow #{Person}! You're #{Age} years old. CONGRATULATIONS!"
 hundred = 100-Age
 puts "You are #{hundred} years from being 100"
+puts "Press any key to continue"
+STDIN.getch
