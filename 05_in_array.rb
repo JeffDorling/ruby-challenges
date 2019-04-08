@@ -15,18 +15,19 @@
 haystack = ["needle" , "hay" , "barn" , "sheep"]
 def in_array (needle, haystack)
 
-  if haystack.include? (needle)
-      puts "It is in Array"
-  else
-    puts "It is not in array"
-  end
+#   if haystack.include? (needle)
+#       puts "It is in Array"
+  
+#   end
 
-end
-in_array("needle", haystack)
-  # Your code here
+# end
+# in_array("needle", haystack)
+#   # Your code here
 
 
 
 # Beast Mode:
+haystack.each { |h| return true if h == needle}
+return false
 
 # Redo the challenge but try solving it again in a different way.
