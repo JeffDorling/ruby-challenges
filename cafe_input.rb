@@ -1,5 +1,6 @@
 require "io/console"
 require_relative "new_order_cafe" 
+require_relative "cafe"
 # Write a program that asks the customer for their order. The customer
 # will only order one item.
 #   if they order a latte, add one to the number of lattes you need to make,
@@ -9,7 +10,7 @@ require_relative "new_order_cafe"
 # Print the final order so you know what to make.
 
 #Start of Customer Input
-
+current_backlog =Backlog.new
 loop do
 puts "What would you like to do today?
 (L)atte Order
@@ -23,19 +24,22 @@ choice = gets.chomp
 if choice == ("L").downcase
     puts "\e[2J\e[f
 You have purchased a Latte"
+current_backlog.lattes
 
 
 elsif choice == ("S").downcase
     puts "\e[2J\e[f
 You have purchased a Scone"
+current_backlog.scones
 
 elsif choice == ("T").downcase
     puts "\e[2J\e[f
 You have purchased a Tea"
+current_backlog.teas
 
 elsif choice == ("O").downcase
     puts "\e[2J\e[f"
-    require_relative "cafe"
+    
 
 reciept = New_order.new
 STDIN.getch

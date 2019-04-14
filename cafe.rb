@@ -14,24 +14,27 @@
 class Backlog
 
     def initialize 
-        @latte = 6
-        @scones = 2
-        @tea = 3
+        @latte = 6.to_i
+        @scones = 2.to_i
+        @tea = 3.to_i
     end
 
 #Latte Method
     def lattes (latte)
-        return @latte
+        latte += @latte
+        return self
     end
 
 #Scone Method
     def scones (scones)
-        return @scones
+        scones += @scones
+        return self
     end
 
 #Tea Method
     def teas (tea)
-        return @tea
+        tea += @tea
+        return self
     end
 
 #Return Current Backlog Method
@@ -41,9 +44,9 @@ Latte:#{@latte} Scones: #{@scones} Tea:#{@tea}"
     end
 end
 
-current_backlog =Backlog.new
+ 
 
-puts current_backlog
+# puts current_backlog
 
 
 
