@@ -10,13 +10,44 @@
 # and
 # 3 teas
 
-# Write a program that asks the customer for their order. The customer
-# will only order one item.
-#   if they order a latte, add one to the number of lattes you need to make,
-#   if they order a scone, add one to the number of scones you need to serve,
-#   if they order a tea, add one to the number of teas you need to make
+#I AM AIMING TO CONTAIN THE BACKLOG IN ITS OWN CLASS
+class Backlog
 
-# Print the final order so you know what to make.
+    def initialize 
+        @latte = 6
+        @scones = 2
+        @tea = 3
+    end
+
+#Latte Method
+    def lattes (latte)
+        return @latte
+    end
+
+#Scone Method
+    def scones (scones)
+        return @scones
+    end
+
+#Tea Method
+    def teas (tea)
+        return @tea
+    end
+
+#Return Current Backlog Method
+    def to_s
+        return "Current Backlog
+Latte:#{@latte} Scones: #{@scones} Tea:#{@tea}"
+    end
+end
+
+current_backlog =Backlog.new
+
+puts current_backlog
+
+
+
+
 
 
 # Part 2
