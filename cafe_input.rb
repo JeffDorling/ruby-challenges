@@ -30,24 +30,25 @@ current_backlog.lattes (1)
 elsif choice == ("S").downcase
     puts "\e[2J\e[f
 You have purchased a Scone"
-current_backlog.scones
+current_backlog.scones (1)
+
 
 elsif choice == ("T").downcase
     puts "\e[2J\e[f
 You have purchased a Tea"
-current_backlog.teas
+current_backlog.teas (1)
+
 
 elsif choice == ("O").downcase
     puts "\e[2J\e[f"
     puts current_backlog
+      
 
-reciept = New_order.new
-STDIN.getch
 elsif choice == ("E").downcase
     puts "\e[2J\e[f"
     puts "Seeya"
     break
-
+    STDIN.getch
 else 
     puts "Invalid"
 end
