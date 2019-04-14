@@ -21,19 +21,19 @@ class Backlog
 
 #Latte Method
     def lattes (latte)
-        latte += @latte
+        @latte += latte
         return self
     end
 
 #Scone Method
     def scones (scones)
-        scones += @scones
+        @scones += scones
         return self
     end
 
 #Tea Method
     def teas (tea)
-        tea += @tea
+        @tea += tea
         return self
     end
 
