@@ -24,7 +24,7 @@ choice = gets.chomp
 if choice == ("L").downcase
     puts "\e[2J\e[f
 You have purchased a Latte"
-current_backlog.lattes
+current_backlog.lattes (1)
 
 
 elsif choice == ("S").downcase
@@ -39,7 +39,7 @@ current_backlog.teas
 
 elsif choice == ("O").downcase
     puts "\e[2J\e[f"
-    
+    puts current_backlog
 
 reciept = New_order.new
 STDIN.getch
