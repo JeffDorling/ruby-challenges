@@ -14,9 +14,9 @@
 class Backlog
 
     def initialize 
-        @latte = 6.to_i
-        @scones = 2.to_i
-        @tea = 3.to_i
+        @latte = 6
+        @scones = 2
+        @tea = 3
     end
 
 #Latte Method
