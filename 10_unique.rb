@@ -17,6 +17,14 @@
 # Check your solution by running the tests:
 # ruby tests/10_unique_test.rb
 
+# def unique(mylist)
+#   mylist = [1,2] | [3,3]
+#   puts mylist
+# end
+
 def unique(mylist)
-  # Your code here
+  mylist = ["tom" ,"tom"] | ["tom"]
+  puts mylist
 end
+
+puts unique []
