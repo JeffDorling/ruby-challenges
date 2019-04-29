@@ -26,5 +26,4 @@ def unique(mylist)
   mylist = ["tom" ,"tom"] | ["tom"]
   puts mylist
 end
-
-puts unique []
+puts unique ()

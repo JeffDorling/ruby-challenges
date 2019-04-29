@@ -27,13 +27,20 @@
 # ...etc
 
 # Your code here
-num_array = [1]
-99.times do 
-    num_array.push (num_array[-1]+1)
+num_array = 0
+100.times do 
+ num_array += 1
+case
+when (num_array % 3 == 0 && num_array % 5 == 0)
+    puts "Fizzbuzz"
+when (num_array % 3 == 0)
+    puts "fizz"
+when (num_array % 5 == 0)
+    puts "buzz"
+when (num_array % 3 == 0 && num_array % 5 == 0)
+    puts "Fizzbuzz"
+else 
+    puts num_array
 end
-if num_array.include?(3)
-    return "Fizz"
-else num_array.include?(5)
-    return "Buzz"
 end
-puts num_array
+
