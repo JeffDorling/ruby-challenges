@@ -12,21 +12,30 @@
 
 # output = bob rob HIDDEN mob
 
-# Check your solution by running:
-# ruby 14_hackerman.rb
+# Check your solution.rb
 
 
 
 # Your code here
+# puts "Please input your first words"
+# first_input = gets.strip
+# puts "Please enter your second words"
+# second_input = gets.strip
+# if first_input == second_input 
+#     puts "#{first_input}"
+#     puts second_input.sub(first_input, "HIDDEN")
+# else puts "#{second_input}"
+# end
+
 puts "Please input your first words"
 first_input = gets.strip
 puts "Please enter your second words"
-second_input = gets.strip
-if first_input == second_input 
-    puts "#{first_input}"
-    puts second_input.sub(first_input, "HIDDEN")
-else puts "#{second_input}"
+second_input = gets.strip.split(" ")
+second_input.each do |word|
+    first_input.gsub!(/#{word}/, "HIDDEN")
 end
+puts first_input
+
 
 
 # Beast mode:
