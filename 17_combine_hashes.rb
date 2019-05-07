@@ -24,9 +24,8 @@
 # Test your solution with ruby tests/17_combine_hashes.rb
 
 def combine_hashes(hash1, hash2)
-  hash3 = {}
-
-  # Your code here
-
-  return hash3
+  hash3 = hash1.merge(hash2)
+    return hash3
 end
+
+puts combine_hashes({a: 1, b: 2, c:3}, {d: 4, e: 5, f: 6})
