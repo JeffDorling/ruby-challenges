@@ -48,5 +48,16 @@
 # Note : The middle digit(s) are 02.
 
 def balanced_num(number)
-    # Your code goes here
+    number = number.digits
+
+    if number.length % 2 == 0
+        first_half = number[0, number.length/2 -1]
+
+    else
+        first_half = number[0, number.length/2]
+end
+
+second_half = number[number.length/2 +1 , number.length]
+
+first_half.sum == second_half.sum ? "Balanced" : "Not Balanced"
 end
