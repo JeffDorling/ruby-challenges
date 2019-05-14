@@ -16,10 +16,11 @@
 #Input: 1254859723 Output: 9875543221
 
 def descending_order(n)
-    # Your code goes here
+    array = n.to_s.split(//).sort!.reverse
+    return array
 end
 
 # Test your code here
-descending_order(1)
+puts descending_order(21445)
 
 # Add some interesting test cases that test edge cases
