@@ -16,11 +16,10 @@
 #Input: 1254859723 Output: 9875543221
 
 def descending_order(n)
-    array = n.to_s.split(//).sort!.reverse
+    array = n.to_s.split(//).sort!.reverse.join.to_i
     return array
 end
-
 # Test your code here
-puts descending_order(21445)
+puts descending_order(1254859723)
 
 # Add some interesting test cases that test edge cases
