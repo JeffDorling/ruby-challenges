@@ -24,5 +24,5 @@
 # Expected output: [2,2,4,5,8]
 
 def sort(num_array)
-    # Your code goes here
+   
 end
