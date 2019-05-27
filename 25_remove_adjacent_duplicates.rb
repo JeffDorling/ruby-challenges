@@ -14,6 +14,8 @@
 # *E.g.* remove_adjacent_duplicates("abcABCabcABC") should return exactly the same string: "abcABCabcABC"
 
 def remove_adjacent_duplicates(input)
-    # Your code goes here
+    return input.squeeze
 end
 
+puts remove_adjacent_duplicates("AAaAbbCCCcDDcDA")
+puts remove_adjacent_duplicates("abcABCabcABC")

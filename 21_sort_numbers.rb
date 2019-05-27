@@ -24,6 +24,7 @@
 # Expected output: [2,2,4,5,8]
 
 def sort(num_array)
+    num_array = []
    (num_array.length -1).times do |index|
     while j > 0 
         if num_array[index-1] > num_array[index]
