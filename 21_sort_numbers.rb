@@ -24,5 +24,17 @@
 # Expected output: [2,2,4,5,8]
 
 def sort(num_array)
-   
+   (num_array.length -1).times do |index|
+    while j > 0 
+        if num_array[index-1] > num_array[index]
+            num_array[index], num_array[index -1] = num_array[index -1], num_array[index]
+        else
+            break
+        end
+        index-= 1
+    end
+    return num_array
 end
+end
+
+puts sort([2,5,4,8,2])
