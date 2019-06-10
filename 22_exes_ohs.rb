@@ -33,5 +33,8 @@
 # Expected output: false
 
 def exes_and_ohs(input)
-    # Your code goes here
+    letters = input.downcase.split(//)
+        uniq_array = letters.uniq_array
+        return false if uniq_array.count != 2
+        letters.count(uniq_array[0]) == letters.count(uniq_array[1]) ? true:false
 end
