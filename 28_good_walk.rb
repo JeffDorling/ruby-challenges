@@ -25,7 +25,10 @@
 # rspec uses a convention that it will run any file in a subdirectory called 'spec' that
 # has a file name ending in _spec.rb
 
-def good_walk(walk)
-    # your code goes here
+# 2 variables x and y start == 0
+#     return true when they both = 0
+#     set a loop that goes through each letter and what it does (north goes +1 s goes -1 for example)
+#     check loop for being 10 long
+def 
 end
 

@@ -9,12 +9,31 @@
 
 # Check your solution by running the tests:
 # ruby tests/04_sum_numbers_test.rb
-number_list = [3 , 4 , 5 , 39]
-def sum_numbers (num)
-  number_list.inject(0){} 
-  return num
-end
-sum_numbers (num)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# number_list = [3 , 4 , 5 , 39]
+# def sum_numbers (num)
+#   number_list.inject(0){} 
+#   return num
+# end
+# sum_numbers (num)
 
 # OPTIONAL:
 # Go to the tests folder and open 04_sum_numbers_test.rb.
