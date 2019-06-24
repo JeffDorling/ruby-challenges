@@ -26,7 +26,8 @@
 # non-repeat, without checking every other letter?
 
 def first_non_repeating(input)
-    # Your code goes here
+    input.split(//).uniq!
+    return input
 end
 
 # Test your code here

@@ -15,23 +15,54 @@
 # with your own examples and test corner cases.
 # 
 # Examples - what if both numbers are equal or are strings?
-puts "Welcome to the Number Comparer Thingy"
+
 def largest_number (num1, num2)
-  puts "Enter your first number"
-  num1 = gets.chomp
-  puts "Enter your second number"
-  num2 = gets.chomp
-  if 
-    #If both numbers are equal
-    num1 == num2
-    puts "The numbers are equal"
-  elsif
-      #Finds the largest number by asking if the 2nd number
-      #is larger then first. 
-    num1 < num2
-    puts "The largest number is #{num2}"
+    if num1.to_i > num2
+        return num1
     else
-    puts "The largest number is #{num1}"   
+        return num2 
+    end
 end
-end
-largest_number(100,50)
+
+puts largest_number(100,50)
+puts largest_number(10,20)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# puts "Welcome to the Number Comparer Thingy"
+# def largest_number (num1, num2)
+#   puts "Enter your first number"
+#   num1 = gets.chomp
+#   puts "Enter your second number"
+#   num2 = gets.chomp
+#   if 
+#     #If both numbers are equal
+#     num1 == num2
+#     puts "The numbers are equal"
+#   elsif
+#       #Finds the largest number by asking if the 2nd number
+#       #is larger then first. 
+#     num1 < num2
+#     puts "The largest number is #{num2}"
+#     else
+#     puts "The largest number is #{num1}"   
+# end
+# end
+# largest_number(100,50)
