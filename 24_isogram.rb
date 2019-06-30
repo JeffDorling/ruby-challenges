@@ -15,7 +15,9 @@
 # *E.g.* isogram?("scary") should return true
 
 def isogram?(input)
-    # Your code goes here
+ input = arr.split(//)!
+ input.each do |char|
+    
 end
 
 # Test your code here
